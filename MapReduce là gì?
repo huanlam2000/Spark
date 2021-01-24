@@ -1,0 +1,7 @@
+MAPREDUCE
+
+MapReduce là một mô hình hay pattern bên trong Hadoop framework được dùng để kết nối với dữ liệu lớn được lưu trong Hadoop File System (HDFS).
+Nó là thành phần chính, không thể thiếu đối với hoạt động của Hadoop framework.
+
+MapReduce hỗ trợ xử lí đồng thời bằng cách chia các petabyte dữ liệu thành các chunks nhỏ hơn và xử lí chúng 
+song song trên Hadoop commodity severs. Cuối cùng nó kết hợp các dữ liệu từ nhiều severs để trả về một kết quả đã được nén từ nhiều nguồn trước đó.
