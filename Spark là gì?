@@ -1,0 +1,52 @@
+- Spark là một thư viện mã nguồn mở, hệ thống xử lý phân tán dùng trong "dữ liệu lớn".
+- Nó sử dụng bộ nhớ đệm và tối ưu thực thi truy vấn cho các truy vấn nhanh với dữ liệu ở bất kì kích thước nào.
+- Nói một cách đơn giản thì Spark là một công cụ xử lí dữ liệu quy mô lớn nhanh và đầy đủ.
+
+- Nói Spark nhanh là bởi vì nó nhanh hơn các cách tiếp cận trước đây để làm việc với xử lí dữ liệu lớn
+chẳng hạn như classical MapReduce. Bí mật của việc nhanh hơn này là do Spark chạy trên RAM (Random Access Memory)
+và điều đó làm cho việc xử lí nhanh hơn nhiều so với xử lí trên đĩa cứng.
+
+- Nói Spark đầy đủ là vì nó có thể được dùng cho rất nhiều thứ như chạy cơ sở dữ liệu phân tán ( distributed SQL)
+tạo luồng dữ liệu, nhập dữ liệu vào cơ sở dữ liệu, chạy các thuật toán học máy, làm việc với đồ thị hay data streams, và hơn thế nữa.
+
+
+  CÁC THÀNH PHẦN CỦA SPARK
+
+1. Apache Spark Core - Spark Core là công cụ thực thi chung và cơ bản cho nền tảng Spark mà tất cả các chức năng khác
+đều được xây dựng dựa trên nó, nói cách khác Spark Core là nền móng của Spark. Nó cung cấp khả năng xử lí tính toán trên RAM
+và tham chiếu các bộ dữ liệu trên các hệ thống lưu trữ bên ngoài.
+
+2. Spark SQL - Spark SQL là một module của Spark dùng để làm việc với dữ liệu được cấu trúc. Giao diện cung cấp
+bởi Spark SQL cung cấp cho Spark nhiều thông tin hơn về cấu trúc và sự tính toán của dữ liệu đang thực hiện.
+
+3. Spark Streaming - Thành phần này cho phép Spark xử lí dữ liệu trực tuyến với thời gian thực.
+Dữ liệu có thể được nạp vào từ nhiều nguồn khác nhau như Kafka, Flume và HDFS (Hadoop Distributed File System).
+Sau đó dữ liệu có thể được xử lí thông qua nhiều thuật toán phức tạp và được xuất thành những file hệ thống, các cơ sở dữ liệu,
+và  live dashboards.
+
+4. MLlib (Machine Learning Library) - Apa che Spark được trang bị một thư viện phong phú được biết như MLlib.
+Thư viện này chứa một mảng lớn các thuật toán phân loại (classification), hồi quy tuyến tính (regression), phân cụm (clustering),
+collaborative. Nó cũng chứa những công cụ khác cho xây dựng, đánh giá và điều chỉnh ML Pipelines.
+Tất cả những chức năng này giúp cho Spark phát mở rộng quy mô ra ngoài phạm vi một công cụ.
+
+5. GraphX - Spark cũng đi kèm với một thư viên để thao tác với cớ sở dữ liệu đồ thị và thực hiện các phép tính
+gọi là GrapX. Grapx hợp nhất quá trình ETL (Extract - giải nén, Transform - biến đổi, và Load - tải),
+phân tích khai thác và tính toán đồ thị lặp lại trong một hệ thống duy nhất.
+
+  CÁC CHỨC NĂNG
+
+1. Xử lí nhanh - chức năng quan trọng nhất của Apache Spark làm cho nó được chọn trong lĩnh vực dữ liệu lớn nhiều hơn
+những kĩ thuật khác là tốc độ. Dữ liệu lớn thị được đặc trưng bởi sự đa dạng, tốc độ và tính xác thực, cái mà cần được xử lí ở tốc độ cao hơn.
+Spark chứa Resilient Distributed Dataset (RDD) cái làm tiết kiệm thời gian trong hoạt động đọc và ghi dữ liệu,
+cho phép nó chạy nhanh hơn Hadoop hầu hết là từ mười đến một trăm lần.
+
+2. Sự linh hoạt - Apache Spark hổ trợ đa ngôn ngữ và cho phép các lập trình viên có thể viết ứng dụng trên Java, Scala, R hoặc Python.
+
+3. Tính toán trong bộ nhớ (RAM) - Spark lưu dữ liệu trên RAM của các máy chủ, nơi cho phép truy cập nhanh và tăng tốc độ phân tích.
+
+4. Xử lí thời gian thực - Spark có khả năng xử lí thời trực tuyến dữ liệu thời gian thực. Không như MapReduce,
+cái mà chỉ xử lí dữ liệu đã được lưu trữ sẵn, Spark có thể dùng để xử lí dữ liệu thời gian thực và vì vậy có thể cho ra kết quả ngay lập tức.
+
+5. Tốt hơn trong phân tích - trái ngược với MapReduce (chứa Map và Reduce function), Spark bao gồm nhiều hơn thế.
+Apache Spark bao gồm một bộ truy vấn SQL phong phú, các thuật toán học máy, phân tích phức tạp, v.v.
+Với tất cả các chức năng này, việc phân tích có thể được thực hiện theo cách tốt hơn với sự trợ giúp của Spark.
