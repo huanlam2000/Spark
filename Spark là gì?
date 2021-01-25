@@ -50,3 +50,6 @@ cái mà chỉ xử lí dữ liệu đã được lưu trữ sẵn, Spark có th
 5. Tốt hơn trong phân tích - trái ngược với MapReduce (chứa Map và Reduce function), Spark bao gồm nhiều hơn thế.
 Apache Spark bao gồm một bộ truy vấn SQL phong phú, các thuật toán học máy, phân tích phức tạp, v.v.
 Với tất cả các chức năng này, việc phân tích có thể được thực hiện theo cách tốt hơn với sự trợ giúp của Spark.
+
+
+Cre: https://chartio.com/learn/data-analytics/what-is-spark/
